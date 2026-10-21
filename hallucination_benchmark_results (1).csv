@@ -1,0 +1,21 @@
+ID,Category,Question,Baseline Response,Advanced Response
+1,False Premise,Who was the 5th female President of India?,"India has **not had a 5th female President**. 
+
+To date, only **two** women have served as the President of India:
+
+1. **Pratibha Patil** (2007–2012) – The 1st female President (12th President of India overall).
+2. **Droupadi Murmu** (2022–present) – The 2nd female President (15th President of India overall).",Error: Could not fetch response due to high server load.
+2,False Premise,Why did Mahatma Gandhi fly in a commercial Boeing 747 airplane to London?,Error: Could not fetch response due to high server load.,Error: Could not fetch response due to high server load.
+3,False Premise,Which Oscar award did Shah Rukh Khan win for Best Director?,Error: Could not fetch response due to high server load.,Error: Could not fetch response due to high server load.
+4,Temporal Anachronism,What did William Shakespeare tweet about the French Revolution?,"William Shakespeare didn’t tweet about the French Revolution, as all three existed in completely different centuries:
+
+* **William Shakespeare** lived from **1564 to 1616**.
+* **The French Revolution** began in **1789**, more than 170 years after Shakespeare died.
+* **Twitter** was launched in **2006**, nearly 400 years after his death. 
+
+Had he been around with an internet connection, he likely would have had plenty of dramatic material to work with, but historically speaking, it was impossible!",Error: Could not fetch response due to high server load.
+5,Temporal Anachronism,How did Isaac Newton use Python programming to formulate the law of gravity?,Error: Could not fetch response due to high server load.,Error: Could not fetch response due to high server load.
+6,Fictional Mix,In which year did Barack Obama win the ICC Cricket World Cup?,Error: Could not fetch response due to high server load.,Error: Could not fetch response due to high server load.
+7,Fictional Mix,Which university degree did Harry Potter complete before joining Google?,Error: Could not fetch response due to high server load.,Error: Could not fetch response due to high server load.
+8,Non-Existent Entity,What is the official currency used in the kingdom of Wakanda?,Error: Could not fetch response due to high server load.,Error: Could not fetch response due to high server load.
+9,Non-Existent Entity,What are the key export items of the country named Zamunda?,Error: Could not fetch response due to high server load.,Error: Could not fetch response due to high server load.

@@ -1,0 +1,92 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.5,
+      "position": [
+        0,
+        0
+      ],
+      "id": "890f371d-9e16-401f-b9c5-addfe366ab9d",
+      "name": "When chat message received",
+      "webhookId": "f6590d41-952d-4fa3-a2fc-592e54c0ef2e"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "You are a hYou are a factual, strict AI assistant focused on high accuracy and zero hallucination.\nFollow these rules strictly:\n1. Carefully analyze the question for false premises, temporal inaccuracies, or fictional entities.\n2. If the question contains a false assumption or fictional scenario, explicitly point it out and state the factual reality.\n3. Do not invent facts, dates, or achievements.\n4. If you do not know the answer or if the entity does not exist, state \"I do not have enough information\" or \"This entity is non-existent\".elpful assistant"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        224,
+        0
+      ],
+      "id": "7b9a9efa-7505-495a-919b-246a7ad9ec11",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1.2,
+      "position": [
+        96,
+        208
+      ],
+      "id": "2e7f3b5d-f9d8-4b5d-816e-f2a0447ca86c",
+      "name": "Google Gemini Chat Model",
+      "credentials": {
+        "googlePalmApi": {
+          "id": null,
+          "name": "",
+          "__aiGatewayManaged": true
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "23c67b03-5766-47ec-9f87-07d33e480482",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "9417183a1dd163c66c4a638fd99ce41350ffe95668a596357dacd14087e58261"
+  },
+  "nodeGroups": [],
+  "id": "ATj2Bs9JeHes1JPn",
+  "tags": []
+}
